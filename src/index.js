@@ -6,9 +6,11 @@ const bodyParser = require('body-parser');
 const {ValidationError} = require('objection');
 const knex = require('@/src/server/bootstrap/database');
 const {Model} = require('objection');
+const healthRoutes = require('@/src/server/routes/health');
 const userRoutes = require('@/src/server/routes/user');
 const bookRoutes = require('@/src/server/routes/book');
 const borrowRoutes = require('@/src/server/routes/borrow');
+const validate = require("./middlewares/validate");
 
 Model.knex(knex);
 
@@ -19,6 +21,7 @@ app.use(bodyParser.json());
 app.use('/users', userRoutes);
 app.use('/books', bookRoutes);
 app.use('/', borrowRoutes);
+app.use('/', healthRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
