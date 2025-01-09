@@ -27,13 +27,13 @@ To set up the Shopping Service APIs, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/bilalisler/invent-analytics-developer-case.git
+    git clone git@github.com:bilalisler/nodejs-shopping-service.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd invent-analytics-developer-case
+    cd nodejs-shopping-service
     ```
 
 3. Run the Service:
