@@ -1,5 +1,3 @@
-# Invent Analytics Test Case
-
 ### 🛠 &nbsp;Tech Stack
 
 - 🌐 &nbsp;
